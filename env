@@ -1,0 +1,113 @@
+source $TELENV
+
+### User Preferences section
+### This section is computer generated.
+### Please do not modify to the end of the file.
+### Place your hand edits above this section.
+###
+#####################################
+#defined by user Nathan
+#	
+#	vesion 2.3
+#	date 2017/09/19
+#
+#	note:  
+#		vesion 2.0	add 3D model(STEP) from fruitech.
+#	note: 
+#		vesion 2.1	add command as
+#			funckey a align components
+#			funckey A align components
+#	note: 
+#		vesion 2.2	
+#			annotate funckey a align components
+#			annotate funckey A align components
+#			add the PSMPATH and PADPATH with $FPMpath
+#			add annotate cmd al
+#			add annotate cmd sda
+#			add annotate cmd mm2mil
+#			add annotate cmd mil2mm
+#
+#	note: 
+#		vesion 2.3	
+#			set CNV_PATH = C:\Cadence\Cadence_SPB_16.6-2015\share\pcb\text
+#
+#
+#####################################
+#BEGIN
+	alias Del delete
+	alias Esc done
+	funckey F zoom fit
+	funckey f zoom fit
+	funckey m move
+	funckey M mov
+	funckey c copy
+	funckey C copy
+	funckey u cancel
+	funckey U cancel
+	funckey VG grid toggle
+	funckey vg grid toggle
+	funckey G Define grid
+	funckey g Define grid
+	#alias F3 add connect
+	funckey PW add connect
+	funckey pw add connect
+	funckey W add connect
+	funckey w add connect
+	#alias l add line
+	funckey pl add line
+	funckey PL add line
+	#funckey l add line
+	#funckey L add line
+	funckey pr add rect
+	funckey PR add rect
+	alias X pick
+	alias Y pick l
+	alias IX ipick
+	alias IY ipick 0
+	funckey ' ' iangle 90
+	#funckey a align components
+	#funckey A align components
+	#alias al al #al is the cmd for align compents by skill.
+	#alias sda sda #sda is the cmd for user can remodify the package built with FPM tools.
+	#alias mm2mil mm2mil	#mm2mil is the cmd to convert by the unit from mm to mil.
+	#alias mil2mm mil2mm 
+
+#END
+
+##############################################################################
+#User 
+##############################################################################
+#BEGIN
+set LIBNATHANPATH = D:/Users/Public/Documents/Cadence/libNathan
+set LIBFRUITECHPATH = D:/Users/Public/Documents/Cadence/FRUITECH20151229TJV10_20160709
+set FPMpath= $LIBNATHANPATH/packageNathan/FPM
+set fruitechPackage = $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Connectors $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/PADS $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Hipee $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Stick
+set NathanPacksge = $LIBNATHANPATH/flashNathan $LIBNATHANPATH/packageNathan $LIBNATHANPATH/padNathan $LIBNATHANPATH/shapeNathan $LIBNATHANPATH/packageNathan/Connector
+set fruitech3Dlib = $LIBFRUITECHPATH/Allegro_LIB/3D_LIB
+set libDilusense = D:/Users/Public/Documents/Cadence/libDliusense/symbols
+
+
+#set psmpath = . symbols .. ../symbols $ALLEGRO_SITE/symbols $compalib
+#set padpath = . symbols .. ../symbols $ALLEGRO_SITE/symbols $compalib
+set padpath = . symbols .. ../symbols $LIBNATHANPATH $NathanPacksge $FPMpath $LIBFRUITECHPATH $fruitechPackage $libDilusense $ALLEGRO_SITE/padstacks $compalib
+set psmpath = . symbols .. ../symbols $LIBNATHANPATH $NathanPacksge $FPMpath $LIBFRUITECHPATH $fruitechPackage $libDilusense $ALLEGRO_SITE/padstacks $compalib
+
+set steppath = . step ../step $ALLEGRO_SITE/step $fruitech3Dlib
+set menupath = . $HOME/pcbenv/menus d:\FPM\util C:\Cadence\Cadence_SPB_16.6-2015\share\local\pcb\menus C:\Cadence\Cadence_SPB_16.6-2015\share\pcb\text\cuimenus
+set formpath = . $HOME/pcbenv/forms C:/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/forms C:/Cadence/Cadence_SPB_16.6-2015/share/pcb/text/forms
+set bmppath = . $HOME/pcbenv/icons C:/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/icons C:/Cadence/Cadence_SPB_16.6-2015/share/pcb/text/icons
+
+set CNV_PATH = C:\Cadence\Cadence_SPB_16.6-2015\share\pcb\text 
+
+
+set allegro_dynam_timing = on
+set acon_disable_nullnet_route
+set allegro_etch_length_on
+unset shape_no_ripupthermal
+unset shape_noclip_rki
+set logic_edit_enabled
+unset no_etch_shape_display
+unset no_shape_fill_dyn_ood
+unset no_shape_fill
+
+

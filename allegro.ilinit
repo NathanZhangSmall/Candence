@@ -1,0 +1,34 @@
+;Version 		1.1
+;date 			2017/08/29
+;auther 		Nathan
+;build
+;UserPATH 			C:\Cadence\SPB_Data\pcbenv			\
+;				
+
+;just the skill about the seriels of align path is \
+;	/skill
+;	/icons
+;	/menus
+;	/forms
+;
+;the sda.cxt path is
+;the user env path
+;
+;the other skill path is UserPATH\skill
+;
+;V1.1 adding the skill "gerber_setup.il"
+
+
+load("skill/sda.ile" "www.eda365.com")
+loadi("skill/align/align.il")
+loadi("skill/align/align_do.il")
+loadi("skill/align/align_utils.il")
+loadi("skill/mil2mm.il")
+loadi("skill/camclear.il")
+loadi("skill/gerberSetupUser.il")
+loadi("skill/gerber_setup.il" "www.allegro-skill.com")
+
+
+
+
+
