@@ -3,7 +3,7 @@
 ;auther 		Nathan
 ;build
 ;UserPATH 			C:\Cadence\SPB_Data\pcbenv			\
-;				
+;
 
 ;just the skill about the seriels of align path is \
 ;	/skill
@@ -27,7 +27,8 @@ loadi("skill/mil2mm.il")
 loadi("skill/camclear.il")
 loadi("skill/gerberSetupUser.il")
 loadi("skill/gerber_setup.il" "www.allegro-skill.com")
-
+loadi("skill/jkcheck_no_refdes.il")
+loadi("skill/jkcheck_refdes_direction.il")
 
 
 

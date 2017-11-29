@@ -13,7 +13,7 @@
 // of Cadence Design Systems, Inc.
 //
 // WARRANTY:
-// Use all material in this file at your own risk.  Cadence Design Systems 
+// Use all material in this file at your own risk.  Cadence Design Systems
 // makes no claims about any material contained in this file.
 //
 //------------------------------------------------------------------------
@@ -59,7 +59,7 @@ BEGIN
             MENUITEM "&DXF...",         	"dxf out"
             MENUITEM "&IDF...",			"idf out"
             MENUITEM SEPARATOR
-	    MENUITEM "S&ub-Drawing...",		"clpcopy"	
+	    MENUITEM "S&ub-Drawing...",		"clpcopy"
 	    MENUITEM "&CSV Pin File...",	"csvpin out"
             MENUITEM SEPARATOR
 	    MENUITEM "&Techfile...",		"techfile out"
@@ -97,15 +97,15 @@ BEGIN
         MENUITEM "&Move",			"move"
         MENUITEM "&Copy",			"copy"
         MENUITEM "M&irror",			"mirror"
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM "Advanced Mirror...",  "tbx advmirror"
-#endif	  
+#endif
 	MENUITEM "&Spin",			"spin"
         MENUITEM "C&hange",			"change"
         MENUITEM "&Delete",			"delete"
         MENUITEM SEPARATOR
         MENUITEM "&Z-Copy Shape",		"zcopy shape"
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM "Cross Copy...",      "tbx crosscopy"
 #endif
         MENUITEM SEPARATOR
@@ -275,7 +275,7 @@ BEGIN
 //        MENUITEM "Mi&ter Corners",    "shape miter corners"
         MENUITEM SEPARATOR
         MENUITEM "&Merge Shapes",       "shape merge shapes"
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM "Shape Utilities...",  "tbx shapeutils boolean"
 #endif
         MENUITEM SEPARATOR
@@ -296,7 +296,7 @@ BEGIN
             MENUITEM "&Define...",	        "define via structure librarian"
             MENUITEM "D&elete...",	        "delete_via_structure"
         END
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM SEPARATOR
         MENUITEM "Coil Designer...",           "tbx coildes"
 #endif
@@ -333,7 +333,7 @@ BEGIN
         END
 	MENUITEM SEPARATOR
 	     MENUITEM "&Artwork...",			"artwork"
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
 	     MENUITEM "Padstack Finder...",     "tbx findpadstack"
 #endif
         MENUITEM "&Derive Connectivity...",	"derive connectivity"
@@ -392,6 +392,8 @@ BEGIN
         MENUITEM    "gerberSetupUser","gerberSetupUser" //
         MENUITEM    "setSave","sda"//
         MENUITEM    "reopen","reopen"//
+        MENUITEM    "checkRefDirection","ch_dir"//
+        MENUITEM    "checkNoRef","ch_noref"//
         MENUITEM SEPARATOR
         MENUITEM "padMake","http C:/Cadence/Cadence_SPB_16.6-2015/tools/pcb/bin/pad_designer.exe"
         //MENUITEM "packageMake","http C:/Cadence/Cadence_SPB_16.6-2015/tools/pcb/bin/allegro.exe"
@@ -412,6 +414,6 @@ BEGIN
     END
 
 
-    
+
 END
 

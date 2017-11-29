@@ -36,7 +36,7 @@
 //  _ALLEGRO_EXPERT		(legacy)
 //  _ALLEGRO_STUDIO	- plus librarian xl is PCB Design L (legacy)
 //  _ALLEGRO_STUDIO_ANL -  PCB Design L (legacy) with low end analysis capability
-//  _ORCAD_PROFESSIONAL	
+//  _ORCAD_PROFESSIONAL
 //  _ORCAD_STANDARD
 //  _ORCAD_DEMO
 //  __unix
@@ -75,7 +75,7 @@ BEGIN
 #ifdef _ALLEGRO_GRE_ALL || _ALLEGRO_GRE_PLAN || _ALLEGRO_GRE_IFD
         MENUITEM "&Bundle...",              "bundle import"
 #endif
-#ifdef _allegro_orbit_import 
+#ifdef _allegro_orbit_import
         MENUITEM "&OrbitIO...",             "orbit import"
 #endif
         MENUITEM SEPARATOR
@@ -133,7 +133,7 @@ BEGIN
 #ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _ALLEGRO_DESIGNER || _ORCAD_PROFESSIONAL
         MENUITEM "Symbol Spreadsheet...",       "symbol to spreadsheet"
 #endif
-        MENUITEM "PDF...",          		"pdf out" 
+        MENUITEM "PDF...",          		"pdf out"
 #ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Batch Plot...",         "tbx batchplot"
 #endif
@@ -207,18 +207,18 @@ BEGIN
         MENUITEM "&Move",           "move"
         MENUITEM "&Copy",           "copy"
         MENUITEM "M&irror",         "mirror"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
 	  MENUITEM "Advanced Mirror...",  "tbx advmirror"
-#endif	  
+#endif
     MENUITEM "&Spin",           "spin"
         MENUITEM "C&hange",         "change"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Change Width...",    "tbx changewidth"
 #endif
         MENUITEM "&Delete",         "delete"
         MENUITEM SEPARATOR
     MENUITEM "&Z-Copy",         "zcopy shape"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
     MENUITEM "Cross Copy...",      "tbx crosscopy"
 #endif
         POPUP "Split &Plane"
@@ -250,7 +250,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Color View &Save",            "colorview create"
         MENUITEM "Color View Restore &Last",    "colorview restore"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Net Visibility Manager...",      "tbx netcolorview"
 #endif
         MENUITEM SEPARATOR
@@ -314,7 +314,7 @@ BEGIN
         MENUITEM "&Assign Color",               "assign color"
         MENUITEM "&Highlight",          "hilight"
         MENUITEM "&Dehighlight",        "dehilight"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Class Color...",         "tbx classcolor"
         MENUITEM "Highlight Dummy Pins...", "tbx dummypincol"
 #endif
@@ -435,13 +435,13 @@ BEGIN
 #endif
 #endif
 
-#ifndef _ALLEGRO_SIGRITY_PI      
+#ifndef _ALLEGRO_SIGRITY_PI
       MENUITEM "Signal Integrity",      "signalintegrity"
-#endif      
-#ifdef _ALLEGRO_SIGRITY_PI          
+#endif
+#ifdef _ALLEGRO_SIGRITY_PI
 	  MENUITEM "Power Analysis",              "sigritypi"
-#endif 
-	  
+#endif
+
 #ifdef _ALLEGRO_RFPCB
       MENUITEM "RF Edit",           "rfedit_appm"
 #endif
@@ -475,7 +475,7 @@ BEGIN
         BEGIN
           MENUITEM "&Define B/B Via...",        "define bbvia"
           MENUITEM "&Auto Define B/B Via...",   "auto define bbvia"
-        END 
+        END
         MENUITEM "Step Package Mapping...",       "step pkg map"
         MENUITEM SEPARATOR
         MENUITEM "Enable On-Line D&RC",          "cns onlinedrc"
@@ -559,7 +559,7 @@ BEGIN
         MENUITEM "Change Shape T&ype",  "shape change type"
         MENUITEM "&Merge Shapes",       "shape merge shapes"
         MENUITEM "Chec&k",          "shape check"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         POPUP "Shape Utilities"
         BEGIN
            MENUITEM "Boolean...",                  "tbx shapeutils boolean"
@@ -596,7 +596,7 @@ BEGIN
             MENUITEM "&Window",             "rename area window"
             MENUITEM "&List",               "rename area list"
     END
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
     MENUITEM "Assign Net to Via...",   "tbx changenet"
 #endif
     MENUITEM SEPARATOR
@@ -666,7 +666,7 @@ BEGIN
 #endif
         MENUITEM SEPARATOR
     MENUITEM "Up&date Symbols...",          "refresh symbol"
-#ifndef _ALLEGRO_STUDIO || _ORCAD_PROFESSIONAL 
+#ifndef _ALLEGRO_STUDIO || _ORCAD_PROFESSIONAL
     POPUP "Rep&lace SQ Temporary"
     BEGIN
         MENUITEM "&Devices",        "replace temp_devices"
@@ -684,7 +684,7 @@ BEGIN
         END
 #endif
     END
-    
+
 // don't want flowplan menu in pcb libraian xl so need _ALLEGRO_STUDIO test
 #ifndef _ALLEGRO_STUDIO
 #ifdef _ALLEGRO_GRE_ALL || _ALLEGRO_GRE_PLAN || _ALLEGRO_GRE_IFD
@@ -720,7 +720,7 @@ BEGIN
             MENUITEM "to Spatial",              "rplan convert spatial"
         END
         MENUITEM "Delete Plan",                 "rplan delete"
-#endif	
+#endif
     END
 #endif
 #endif
@@ -757,11 +757,11 @@ BEGIN
             MENUITEM "D&elete...",          "delete_via_structure"
         END
         POPUP "&Convert Fanout"
-        BEGIN         
+        BEGIN
             MENUITEM "Mark",                    "mark fanout"
             MENUITEM "Unmark",                  "unmark fanout"
         END
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM SEPARATOR
         MENUITEM "Coil Designer...",           "tbx coildes"
         MENUITEM "Shield Router...",            "tbx shieldroute"
@@ -774,7 +774,7 @@ BEGIN
             MENUITEM "Route Net(s) By &Pick",   "route_by_pick"
             MENUITEM "&Miter By Pick",      "miter_by_pick"
             MENUITEM "&UnMiter By Pick",        "unmiter_by_pick"
-#ifndef _ALLEGRO_STUDIO 
+#ifndef _ALLEGRO_STUDIO
             MENUITEM "&Elongation By Pick",     "elong_by_pick"
 #endif
             MENUITEM SEPARATOR
@@ -834,33 +834,33 @@ BEGIN
 	    MENUITEM "Auto Connect", "auto_connect"
 	    MENUITEM SEPARATOR
 #endif
-#ifdef _ALLEGRO_STUDIO || _ALLEGRO_DESIGNER || _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL 
+#ifdef _ALLEGRO_STUDIO || _ALLEGRO_DESIGNER || _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL
             MENUITEM "Auto-interactive Convert Corner",      "aicc"
             MENUITEM SEPARATOR
 #endif
 #ifdef _ALLEGRO_DESIGNER || _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL
-            MENUITEM "Resize/Respace Diff Pairs",   "resize_respace_dp" 
+            MENUITEM "Resize/Respace Diff Pairs",   "resize_respace_dp"
 #endif
 
 
-#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _allegro_option_highspeed 
+#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _allegro_option_highspeed
             MENUITEM SEPARATOR
-            POPUP "&Fiber Weave Effect"    
+            POPUP "&Fiber Weave Effect"
             BEGIN
               MENUITEM "&Add ZigZag Pattern",     "fiber_weave"
-            END 
-            MENUITEM SEPARATOR              
+            END
+            MENUITEM SEPARATOR
 #endif
 
-#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _allegro_option_highspeed 
-            POPUP "&Tabbed Routing"    
+#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _allegro_option_highspeed
+            POPUP "&Tabbed Routing"
             BEGIN
               MENUITEM "&Generate Tab", "generate_tabs"
               MENUITEM "&Move Tab",     "move_tab"
               MENUITEM "&Delete Tab",   "delete_tab"
-              MENUITEM "Analyze",       "analyze_tabs"              
-            END 
-            MENUITEM SEPARATOR              
+              MENUITEM "Analyze",       "analyze_tabs"
+            END
+            MENUITEM SEPARATOR
 #endif
 
             MENUITEM "Help On Unsupported Utilities", "helpcmd -unsupported"
@@ -868,7 +868,7 @@ BEGIN
 #endif   // disable_unsupported_menus
 
     END
-#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _ALLEGRO_STUDIO_ANL || _allegro_option_highspeed || _allegro_option_pdn || _ORCAD_PROFESSIONAL	
+#ifdef _ALLEGRO_EXPERT || _ALLEGRO_PCB_GXL || _ALLEGRO_STUDIO_ANL || _allegro_option_highspeed || _allegro_option_pdn || _ORCAD_PROFESSIONAL
     POPUP "Analy&ze"
     BEGIN
 #ifndef _ORCAD_PROFESSIONAL
@@ -922,7 +922,7 @@ BEGIN
             MENUITEM "Relative Copy",      "relative copy"
             MENUITEM "Relative Move",      "relative move"
         END
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Label Tune...",         "tbx labeltune"
 #endif
         MENUITEM SEPARATOR
@@ -948,7 +948,7 @@ BEGIN
 #ifndef _ALLEGRO_STUDIO  ||  _ORCAD_PROFESSIONAL || _ORCAD_STANDARD
         MENUITEM SEPARATOR
         MENUITEM "&Create Coupons...",      "create coupons"
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         POPUP "Barcode Generator"
         BEGIN
          MENUITEM "Code 39/128...",                 "tbx barcode linear"
@@ -977,7 +977,7 @@ BEGIN
             MENUITEM "Parameters...",              "testprep prmed"
 
         END
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM "Mask Generator...",             "tbx genmask"
 #endif
         MENUITEM SEPARATOR
@@ -1116,7 +1116,7 @@ BEGIN
             MENUITEM "Restore &ALL",        "editpad restore all"
         END
 #endif
-#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox || _orcad_option_prodtoolbox
         MENUITEM "Padstack Finder...",     "tbx findpadstack"
         MENUITEM "Quick Symbol Edit...",   "tbx quicksymedit"
 #endif
@@ -1132,7 +1132,7 @@ BEGIN
         MENUITEM "Topology E&xtract",           "topology template"
 #endif
         MENUITEM "&Technology File Compare...", "techfile compare"
-#ifdef _ORCAD_SI 
+#ifdef _ORCAD_SI
         POPUP "Anal&ysis"
         BEGIN
             MENUITEM "Model &Browser...",   "signal library"
@@ -1144,7 +1144,7 @@ BEGIN
         MENUITEM "Database &Check...",      "dbdoctor"
         MENUITEM "&Update DRC",         "drc update"
         MENUITEM "&Window DRC",         "drc window"
-#ifdef _allegro_option_prodtoolbox        
+#ifdef _allegro_option_prodtoolbox
         MENUITEM "Z-DRC...",               "tbx zdrc"
 #endif
         MENUITEM SEPARATOR
@@ -1202,7 +1202,8 @@ BEGIN
         MENUITEM    "&mil2mm","mil2mm" //
         MENUITEM    "gerberSet","gerber_setup" //
         MENUITEM    "gerberSetupUser","gerberSetupUser" //
-        MENUITEM    "reopen","reopen"//
+        MENUITEM    "checkRefDirection","ch_dir"//
+        MENUITEM    "checkNoRef","ch_noref"//
         //MENUITEM    "setSave","sda" //
         MENUITEM SEPARATOR
         MENUITEM "padMake","http C:/Cadence/Cadence_SPB_16.6-2015/tools/pcb/bin/pad_designer.exe"
@@ -1223,7 +1224,7 @@ BEGIN
 
             END
     END
-    
+
 /*
     //From OrCAD
     POPUP "MyImport"
@@ -1242,7 +1243,7 @@ BEGIN
         END
     END
 */
-    
+
 // Added menuitem by Tianchun
 // To test menu 2015-02-05
     POPUP "&Skill"
