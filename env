@@ -7,18 +7,18 @@ source $TELENV
 ###
 #####################################
 #defined by user Nathan
-#	
+#
 #	vesion 2.3
 #	date 2017/09/19
 #
-#	note:  
+#	note:
 #		vesion 2.0	add 3D model(STEP) from fruitech.
-#	note: 
+#	note:
 #		vesion 2.1	add command as
 #			funckey a align components
 #			funckey A align components
-#	note: 
-#		vesion 2.2	
+#	note:
+#		vesion 2.2
 #			annotate funckey a align components
 #			annotate funckey A align components
 #			add the PSMPATH and PADPATH with $FPMpath
@@ -27,8 +27,8 @@ source $TELENV
 #			add annotate cmd mm2mil
 #			add annotate cmd mil2mm
 #
-#	note: 
-#		vesion 2.3	
+#	note:
+#		vesion 2.3
 #			set CNV_PATH = C:\Cadence\Cadence_SPB_16.6-2015\share\pcb\text
 #
 #
@@ -70,19 +70,19 @@ source $TELENV
 	#alias al al #al is the cmd for align compents by skill.
 	#alias sda sda #sda is the cmd for user can remodify the package built with FPM tools.
 	#alias mm2mil mm2mil	#mm2mil is the cmd to convert by the unit from mm to mil.
-	#alias mil2mm mil2mm 
+	#alias mil2mm mil2mm
 
 #END
 
 ##############################################################################
-#User 
+#User
 ##############################################################################
 #BEGIN
 set LIBNATHANPATH = D:/Users/Public/Documents/Cadence/libNathan
 set LIBFRUITECHPATH = D:/Users/Public/Documents/Cadence/FRUITECH20151229TJV10_20160709
 set FPMpath= $LIBNATHANPATH/packageNathan/FPM
 set fruitechPackage = $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Connectors $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/PADS $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Hipee $LIBFRUITECHPATH/Allegro_LIB/Package_Symbol/Stick
-set NathanPacksge = $LIBNATHANPATH/flashNathan $LIBNATHANPATH/packageNathan $LIBNATHANPATH/padNathan $LIBNATHANPATH/shapeNathan $LIBNATHANPATH/packageNathan/Connector
+set NathanPacksge = $LIBNATHANPATH/flashNathan $LIBNATHANPATH/packageNathan $LIBNATHANPATH/padNathan $LIBNATHANPATH/shapeNathan $LIBNATHANPATH/packageNathan/Connector $LIBNATHANPATH/packageNathan/LClib
 set fruitech3Dlib = $LIBFRUITECHPATH/Allegro_LIB/3D_LIB
 set libDilusense = D:/Users/Public/Documents/Cadence/libDliusense/symbols
 
@@ -97,7 +97,6 @@ set menupath = . $HOME/pcbenv/menus d:\FPM\util C:\Cadence\Cadence_SPB_16.6-2015
 set formpath = . $HOME/pcbenv/forms C:/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/forms C:/Cadence/Cadence_SPB_16.6-2015/share/pcb/text/forms
 set bmppath = . $HOME/pcbenv/icons C:/Cadence/Cadence_SPB_16.6-2015/share/local/pcb/icons C:/Cadence/Cadence_SPB_16.6-2015/share/pcb/text/icons
 
-set CNV_PATH = C:\Cadence\Cadence_SPB_16.6-2015\share\pcb\text 
 
 
 set allegro_dynam_timing = on
